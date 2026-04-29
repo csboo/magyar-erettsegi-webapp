@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useGonoszRecords } from "../hooks/useGonoszRecords";
 import { shuffle } from "../lib/random";
+import { usePersistentState } from "../hooks/usePersistentState";
 import type { GonoszRecord } from "../types";
 
 type FieldKey = keyof GonoszRecord;
@@ -163,13 +164,13 @@ export function GonoszTablazatPage() {
     () => records.map((record, id) => ({ ...record, id })),
     [records],
   );
-  const [filters, setFilters] = useState<Filters>(() => createEmptyFilters());
+  const [filters, setFilters] = usePersistentState<Filters>("gonosztablazat-filters", createEmptyFilters());
   const [sessionRecords, setSessionRecords] = useState<IndexedRecord[] | null>(null);
   const [usedIds, setUsedIds] = useState<number[]>([]);
   const [round, setRound] = useState<RoundState | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [evaluated, setEvaluated] = useState(false);
-  const [hardMode, setHardMode] = useState(false);
+  const [hardMode, setHardMode] = usePersistentState<boolean>("gonosztablazat-hardMode", false);
   const [finished, setFinished] = useState(false);
   const [roundIndex, setRoundIndex] = useState(0);
   const [totalCorrect, setTotalCorrect] = useState(0);
@@ -533,6 +534,7 @@ export function GonoszTablazatPage() {
                         ) : (
                           <select
                             value={value}
+                            className={value ? "" : "unfilled"}
                             onChange={(event) =>
                               setAnswers((current) => ({
                                 ...current,

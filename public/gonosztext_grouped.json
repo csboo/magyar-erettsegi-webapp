@@ -2,7 +2,7 @@
   "records": [
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Homérosz",
       "cim": "Íliász és Odüsszeia",
       "mufaj": "eposzok",
@@ -11,7 +11,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Aiszóposz",
       "cim": "A hangya és a tücsök",
       "mufaj": "állatmese, fabula",
@@ -20,7 +20,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Alkaiosz",
       "cim": "Az állam hajója",
       "mufaj": "dal",
@@ -29,7 +29,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Alkaiosz",
       "cim": "Bordal",
       "mufaj": "dal",
@@ -38,7 +38,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Szapphó",
       "cim": "Édesanyám! Nemperdül a rokka",
       "mufaj": "dal",
@@ -47,7 +47,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Szapphó",
       "cim": "Aphroditéhoz",
       "mufaj": "himnusz",
@@ -56,7 +56,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Anakreón",
       "cim": "Gyűlölöm…",
       "mufaj": "epigramma",
@@ -65,7 +65,7 @@
     },
     {
       "era": "ókor",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Anakreón",
       "cim": "Töredék a halálról",
       "mufaj": "dal",
@@ -74,7 +74,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Szophoklész",
       "cim": "Antigoné",
       "mufaj": "tragédia",
@@ -83,7 +83,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vergilius",
       "cim": "Aeneis",
       "mufaj": "eposz",
@@ -92,7 +92,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vergilius",
       "cim": "IX. ecloga (Moeris és Lycidias)",
       "mufaj": "ekloga",
@@ -101,7 +101,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Catullus",
       "cim": "Gyűlölök és szeretek",
       "mufaj": "epigramma",
@@ -110,7 +110,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Horatius",
       "cim": "Taliarchushoz",
       "mufaj": "carmen/óda",
@@ -119,7 +119,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ovidius",
       "cim": "Átváltozások",
       "mufaj": "carmen perpetuum",
@@ -128,7 +128,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "Catullus",
       "cim": "Éljünk, Lesbia",
       "mufaj": "carmen",
@@ -137,7 +137,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Hésziodosz",
       "cim": "Istenek születése",
       "mufaj": "epikus költészet",
@@ -146,7 +146,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Hésziodosz",
       "cim": "Munkák és napok",
       "mufaj": "epikus költészet",
@@ -155,7 +155,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Szophoklész",
       "cim": "Oidipusz király",
       "mufaj": "tragédia",
@@ -164,7 +164,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Vergilius",
       "cim": "IV. ecloga",
       "mufaj": "ekloga",
@@ -173,7 +173,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Horatius",
       "cim": "Licinius Murenához",
       "mufaj": "carmen/óda",
@@ -182,7 +182,7 @@
     },
     {
       "era": "ókor",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Horatius",
       "cim": "Leuconoénak",
       "mufaj": "carmen/óda",
@@ -191,7 +191,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Szent Ágoston",
       "cim": "Vallomások",
       "mufaj": "vallomás/confessio",
@@ -200,7 +200,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Walther von der Vogelweide",
       "cim": "A hársfaágak csendes árnyán",
       "mufaj": "helyzetdal",
@@ -209,7 +209,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Jacopone da Todi",
       "cim": "Himnusz a fájdalmas anyáról",
       "mufaj": "himnusz",
@@ -218,7 +218,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "N/A",
       "cim": "Carmina Burana",
       "mufaj": "vágáns dalok",
@@ -227,7 +227,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Dante Alighieri",
       "cim": "Isteni színjáték",
       "mufaj": "emberiségköltemény",
@@ -236,7 +236,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Francois Villon",
       "cim": "A nagy testamentum",
       "mufaj": "pl. rondó; műforma: ballada",
@@ -245,7 +245,7 @@
     },
     {
       "era": "középkor",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Anonymus",
       "cim": "Gesta Hungarorum",
       "mufaj": "gesta",
@@ -254,7 +254,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "N/A",
       "cim": "Halotti beszéd és könyörgés",
       "mufaj": "sermo = temetési beszéd",
@@ -263,7 +263,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "N/A",
       "cim": "Ómagyar Mária-siralom",
       "mufaj": "planctus",
@@ -272,7 +272,7 @@
     },
     {
       "era": "középkor",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Walther von der Vogelweide",
       "cim": "Ó jaj, hogy eltűnt minden…",
       "mufaj": "elégia",
@@ -281,7 +281,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Giovanni Boccaccio",
       "cim": "Dekameron",
       "mufaj": "novellagyűjtemény",
@@ -290,7 +290,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Francesco Petrarca",
       "cim": "Pó, földi kérgem…",
       "mufaj": "szonett(inkább műforma), dal (in: Daloskönyv)",
@@ -299,7 +299,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "William Shakespeare",
       "cim": "LXXV. szonett (Az vagy nekem, mi testnek a kenyér)",
       "mufaj": "szonett (inkább műforma)",
@@ -308,7 +308,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "William Shakespeare",
       "cim": "Rómeó és Júlia",
       "mufaj": "tragédia",
@@ -317,7 +317,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "William Shakespeare",
       "cim": "Hamlet, dán királyfi",
       "mufaj": "tragédia",
@@ -326,7 +326,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Janus Pannonius",
       "cim": "Pannónia dicsérete",
       "mufaj": "epigramma",
@@ -335,7 +335,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Janus Pannonius",
       "cim": "Egy dunántúli mandulafáról",
       "mufaj": "epigramma",
@@ -344,7 +344,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Gyergyai (Gergei) Albert",
       "cim": "História egy Árgirus nevű királyfiról és egy tündér szűzleányról",
       "mufaj": "széphistória",
@@ -353,7 +353,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Tinódi Lantos Sebestyén",
       "cim": "Eger vár viadaljáról való ének",
       "mufaj": "históriás ének",
@@ -362,7 +362,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Balassi Bálint",
       "cim": "Hogy Júliára talála, így köszöne néki,",
       "mufaj": "dal",
@@ -371,7 +371,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Balassi Bálint",
       "cim": "Egy katonaének",
       "mufaj": "dal",
@@ -380,7 +380,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Balassi Bálint",
       "cim": "Borivóknak való",
       "mufaj": "dal",
@@ -389,7 +389,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Balassi Bálint",
       "cim": "Adj már csendességet",
       "mufaj": "panaszzsoltár",
@@ -398,7 +398,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "Francesco Petrarca",
       "cim": "Daloskönyv",
       "mufaj": "szonett(ek)",
@@ -407,7 +407,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Heltai Gáspár",
       "cim": "Száz fabula",
       "mufaj": "fabula /Esopus-fordítások)",
@@ -416,7 +416,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Szenczi Molnár Albert",
       "cim": "42. zsoltár",
       "mufaj": "zsoltárparafrázis",
@@ -425,7 +425,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Janus Pannonius",
       "cim": "Galeotto Marzióhoz",
       "mufaj": "epigramma",
@@ -434,7 +434,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Janus Pannonius",
       "cim": "Búcsú Váradtól",
       "mufaj": "elégia/búcsúvers",
@@ -443,7 +443,7 @@
     },
     {
       "era": "Reneszánsz",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Janus Pannonius",
       "cim": "Saját lelkéhez",
       "mufaj": "elégia",
@@ -452,7 +452,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Pázmány Péter",
       "cim": "(Alvinczi Péter uramhoz írt) öt szép levél",
       "mufaj": "vitairat",
@@ -461,7 +461,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Zrínyi Miklós",
       "cim": "Szigeti veszedelem",
       "mufaj": "eposz",
@@ -470,7 +470,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Mikes Kelemen",
       "cim": "Törökországi levelek",
       "mufaj": "fiktív levelek",
@@ -479,7 +479,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Csokonai Vitéz Mihály",
       "cim": "Dorottya (avagy a dámák diadalma a Fársángon)",
       "mufaj": "eposzparódia / komikus eposz",
@@ -488,7 +488,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Csokonai Vitéz Mihály",
       "cim": "Tartózkodó kérelem",
       "mufaj": "udvarló dal /anakreoni dal",
@@ -497,7 +497,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Apáczai Csere János",
       "cim": "Magyar Encyclopaedia",
       "mufaj": "enciklopédia",
@@ -506,7 +506,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Csokonai Vitéz Mihály",
       "cim": "A boldogság",
       "mufaj": "anakreóni dal",
@@ -515,7 +515,7 @@
     },
     {
       "era": "Barokk/Rokoko",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Miguel de Cervantes",
       "cim": "Don Quijote",
       "mufaj": "lovagregény-paródia / pikareszk regény",
@@ -524,7 +524,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Molière",
       "cim": "Tartuffe",
       "mufaj": "komédia",
@@ -533,7 +533,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Molière",
       "cim": "A fösvény",
       "mufaj": "komédia",
@@ -542,7 +542,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Jonathan Swift",
       "cim": "Gulliver utazásai",
       "mufaj": "szatirikus regény",
@@ -551,7 +551,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Voltaire",
       "cim": "Candide, vagy az optimizmus",
       "mufaj": "tézisregény",
@@ -560,7 +560,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Johann Wolfgang von Goethe",
       "cim": "Faust",
       "mufaj": "emberiség-költemény/emberiségdráma",
@@ -569,7 +569,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Kazinczy Ferenc",
       "cim": "Tövisek és virágok",
       "mufaj": "epigramma-gyűjtemény",
@@ -578,7 +578,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Berzsenyi Dániel",
       "cim": "Osztályrészem",
       "mufaj": "elégiko-óda",
@@ -587,7 +587,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Berzsenyi Dániel",
       "cim": "A közelítő tél",
       "mufaj": "elégia",
@@ -596,7 +596,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Berzsenyi Dániel",
       "cim": "A magyarokhoz I. (-II.)",
       "mufaj": "óda",
@@ -605,7 +605,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Berzsenyi Dániel",
       "cim": "Levéltöredék barátnémhoz",
       "mufaj": "elégia",
@@ -614,7 +614,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Csokonai Vitéz Mihály",
       "cim": "A Magánossághoz",
       "mufaj": "elégiko-óda",
@@ -623,7 +623,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Csokonai Vitéz Mihály",
       "cim": "A Reményhez",
       "mufaj": "elégia /elégiko-óda",
@@ -632,7 +632,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "Johann Wolfgang von Goethe",
       "cim": "Az ifjú Werther szenvedései",
       "mufaj": "napló-/levélregény",
@@ -641,7 +641,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "Kármán József",
       "cim": "Fanni hagyományai",
       "mufaj": "napló-/levélregény",
@@ -650,7 +650,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "Csokonai Vitéz Mihály",
       "cim": "A tihanyi Ekhóhoz",
       "mufaj": "elégiko-óda",
@@ -659,7 +659,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Csokonai Vitéz Mihály",
       "cim": "Az estve",
       "mufaj": "gondolati-filozófiai költemény",
@@ -668,7 +668,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Nicolas Boileau-Despréaux",
       "cim": "Ars poetica",
       "mufaj": "ars poetica",
@@ -677,7 +677,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Jean Racine",
       "cim": "Phaedra",
       "mufaj": "tragédia",
@@ -686,7 +686,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Jean-Jacques Rousseau",
       "cim": "Emil, vagy a nevelésről",
       "mufaj": "nevelési regény",
@@ -695,7 +695,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Jean-Jacques Rousseau",
       "cim": "Társadalmi szerződés",
       "mufaj": "tanulmány",
@@ -704,7 +704,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Goethe",
       "cim": "A vándor éji dala",
       "mufaj": "dal",
@@ -713,7 +713,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Goethe",
       "cim": "A Tündérkirály",
       "mufaj": "ballada",
@@ -722,7 +722,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Friedrich Schiller",
       "cim": "Tell Vilmos",
       "mufaj": "színjáték",
@@ -731,7 +731,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Bessenyei György",
       "cim": "Ágis tragédiája",
       "mufaj": "tragédia 1772-jelképesen a magyar felvilágosodás kezdete",
@@ -740,7 +740,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Berzsenyi Dániel",
       "cim": "Horác",
       "mufaj": "óda",
@@ -749,7 +749,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Kármán József",
       "cim": "A nemzet csinosodása",
       "mufaj": "tanulmány",
@@ -758,7 +758,7 @@
     },
     {
       "era": "Felvilágosodás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Kazinczy Ferenc",
       "cim": "Fogságom naplója",
       "mufaj": "emlékirat",
@@ -767,7 +767,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Walter Scott",
       "cim": "Ivanhoe",
       "mufaj": "történelmi regény",
@@ -776,7 +776,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Edgar Allan Poe",
       "cim": "A Morgue utcai kettős gyilkosság",
       "mufaj": "detektívnovella",
@@ -785,7 +785,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Robert Burns",
       "cim": "John Anderson, szívem John",
       "mufaj": "dal",
@@ -794,7 +794,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Robert Burns",
       "cim": "Falusi randevú",
       "mufaj": "(helyzet)dal",
@@ -803,7 +803,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Victor Hugo",
       "cim": "A párizsi Notre-Dame",
       "mufaj": "regény",
@@ -812,7 +812,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Heinrich Heine",
       "cim": "Loreley",
       "mufaj": "dal",
@@ -821,7 +821,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Adam Mickiewicz",
       "cim": "A lengyel anyához",
       "mufaj": "hazafias óda",
@@ -830,7 +830,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Puskin",
       "cim": "Anyegin",
       "mufaj": "verses regény",
@@ -839,7 +839,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Kisfaludy Károly",
       "cim": "Mohács",
       "mufaj": "hazafias vers / elégia",
@@ -848,7 +848,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Kölcsey Ferenc",
       "cim": "Nemzeti hagyományok",
       "mufaj": "értekezés/tanulmány",
@@ -857,7 +857,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kölcsey Ferenc",
       "cim": "Parainesis Kölcsey Kálmánhoz",
       "mufaj": "intelem, testamentum",
@@ -866,7 +866,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kölcsey Ferenc",
       "cim": "Himnusz",
       "mufaj": "himnusz",
@@ -875,7 +875,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kölcsey Ferenc",
       "cim": "Vanitatum vanitas",
       "mufaj": "gondolati költemény",
@@ -884,7 +884,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kölcsey Ferenc",
       "cim": "Zrínyi dala",
       "mufaj": "óda",
@@ -893,7 +893,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kölcsey Ferenc",
       "cim": "Zrínyi második éneke",
       "mufaj": "óda",
@@ -902,7 +902,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vörösmarty Mihály",
       "cim": "Szózat",
       "mufaj": "közösségi óda",
@@ -911,7 +911,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Vörösmarty Mihály",
       "cim": "A merengőhöz",
       "mufaj": "filozofikus szerelmes vers",
@@ -920,7 +920,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vörösmarty Mihály",
       "cim": "Gondolatok a könyvtárban",
       "mufaj": "gondolati költemény",
@@ -929,7 +929,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vörösmarty Mihály",
       "cim": "Az emberek",
       "mufaj": "gondolati költemény",
@@ -938,7 +938,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vörösmarty Mihály",
       "cim": "Előszó",
       "mufaj": "gondolati költemény",
@@ -947,7 +947,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vörösmarty Mihály",
       "cim": "A vén cigány",
       "mufaj": "rapszódia",
@@ -956,7 +956,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Vörösmarty Mihály",
       "cim": "Csongor és Tünde",
       "mufaj": "drámai költemény",
@@ -965,7 +965,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arany János",
       "cim": "Letészem a lantot",
       "mufaj": "elégia",
@@ -974,7 +974,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arany János",
       "cim": "Fiamnak",
       "mufaj": "családi vers",
@@ -983,7 +983,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arany János",
       "cim": "Kozmopolita költészet",
       "mufaj": "alkalmi vers",
@@ -992,7 +992,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arany János",
       "cim": "Epilogus",
       "mufaj": "elégia, létösszegző vers",
@@ -1001,7 +1001,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arany János",
       "cim": "Mindvégig",
       "mufaj": "ars poetica",
@@ -1010,7 +1010,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arany János",
       "cim": "Toldi estéje, Toldi szerelme",
       "mufaj": "elbeszélő költemény",
@@ -1019,7 +1019,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arany János",
       "cim": "Ágnes asszony, V. László, A walesi bárdok, Tengeri-hántás, Vörös Rébék, Híd-avatás, Tetemre-hívás",
       "mufaj": "ballada",
@@ -1028,7 +1028,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "A természet vadvirága",
       "mufaj": "ars poetica",
@@ -1037,7 +1037,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "A bánat? egy nagy oceán",
       "mufaj": "epigramma",
@@ -1046,7 +1046,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Petőfi Sándor",
       "cim": "A négyökrös szekér",
       "mufaj": "dal",
@@ -1055,7 +1055,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Fa leszek, ha…",
       "mufaj": "udvarló dal",
@@ -1064,7 +1064,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Reszket a bokor, mert…",
       "mufaj": "udvarló dal",
@@ -1073,7 +1073,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "A XIX. század költői",
       "mufaj": "ars poetica",
@@ -1082,7 +1082,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Minek nevezzelek?",
       "mufaj": "szerelmes vers",
@@ -1091,7 +1091,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Fekete-piros dal",
       "mufaj": "panasz-/gyászdal",
@@ -1100,7 +1100,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "A helység kalapácsa",
       "mufaj": "eposzparódia",
@@ -1109,7 +1109,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Az apostol",
       "mufaj": "elbeszélő költemény",
@@ -1118,7 +1118,7 @@
     },
     {
       "era": "Romantika",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Jókai Mór",
       "cim": "A tengerszem tündére",
       "mufaj": "novella",
@@ -1127,7 +1127,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Jókai Mór",
       "cim": "A huszti beteglátogatók",
       "mufaj": "anekdotikus novella",
@@ -1136,7 +1136,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Jókai Mór",
       "cim": "Az arany ember",
       "mufaj": "regény",
@@ -1145,7 +1145,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Katona József",
       "cim": "Bánk bán",
       "mufaj": "történelmi dráma/tragédia",
@@ -1154,7 +1154,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Madách Imre",
       "cim": "Az ember tragédiája",
       "mufaj": "emberiségköltemény",
@@ -1163,7 +1163,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "Kölcsey Ferenc",
       "cim": "Mohács",
       "mufaj": "emlékbeszéd",
@@ -1172,7 +1172,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "Vörösmarty Mihály",
       "cim": "Zalán futása",
       "mufaj": "eposz",
@@ -1181,7 +1181,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Arany János",
       "cim": "Kertben",
       "mufaj": "elégia, létösszegző vers",
@@ -1190,7 +1190,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Egy gondolat bánt engemet",
       "mufaj": "rapszódia",
@@ -1199,7 +1199,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "A puszta, télen",
       "mufaj": "tájvers",
@@ -1208,7 +1208,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Tompa Mihály",
       "cim": "A gólyához",
       "mufaj": "elégia",
@@ -1217,7 +1217,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Tompa Mihály",
       "cim": "A madár, fiaihoz",
       "mufaj": "lírai allegória",
@@ -1226,7 +1226,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Gárdonyi Géza",
       "cim": "Az én falum",
       "mufaj": "regény",
@@ -1235,7 +1235,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Vajda János",
       "cim": "Húsz év múlva",
       "mufaj": "dal",
@@ -1244,7 +1244,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Edgar Allan Poe",
       "cim": "A holló",
       "mufaj": "misztikus költemény",
@@ -1253,7 +1253,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "William Blake",
       "cim": "A tigris",
       "mufaj": "dal",
@@ -1262,7 +1262,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Arany János",
       "cim": "Buda halála",
       "mufaj": "eposz  (töredék- az első, egyetlen megvalósult rész)",
@@ -1271,7 +1271,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Szabadság, szerelem",
       "mufaj": "epigramma",
@@ -1280,7 +1280,7 @@
     },
     {
       "era": "Romantika",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Petőfi Sándor",
       "cim": "Szeptember végén",
       "mufaj": "elégia",
@@ -1289,7 +1289,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Stendhal",
       "cim": "Vörös és fekete",
       "mufaj": "karrier-/ realista-/analitikus regény",
@@ -1298,7 +1298,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Balzac",
       "cim": "Goriot apó",
       "mufaj": "társadalmi-/karrierregény",
@@ -1307,7 +1307,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Gogol",
       "cim": "A köpönyeg",
       "mufaj": "elbeszélés",
@@ -1316,7 +1316,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Dosztojevszkij",
       "cim": "Bűn és bűnhődés",
       "mufaj": "polifonikus eszmeregény",
@@ -1325,7 +1325,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Tolsztoj",
       "cim": "Ivan Iljics halála",
       "mufaj": "kisregény",
@@ -1334,7 +1334,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Csehov",
       "cim": "Sirály",
       "mufaj": "drámaiatlan dráma (komédiának szánva)",
@@ -1343,7 +1343,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Csehov",
       "cim": "Ványa bácsi",
       "mufaj": "drámaiatlan dráma (komédiának szánva)",
@@ -1352,7 +1352,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Mikszáth Kálmán",
       "cim": "Beszterce ostroma",
       "mufaj": "anekdotikus regény",
@@ -1361,7 +1361,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Mikszáth Kálmán",
       "cim": "A jó palócok (Bede Anna tartozása, A bágyi csoda)",
       "mufaj": "novelláskötet",
@@ -1370,7 +1370,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Mikszáth Kálmán",
       "cim": "Tót atyafiak (Az a fekete folt)",
       "mufaj": "elbeszélésgyűjtemény",
@@ -1379,7 +1379,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Gogol",
       "cim": "Az orr",
       "mufaj": "hivatalnoknovella",
@@ -1388,7 +1388,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Tolsztoj",
       "cim": "Anna Karenina",
       "mufaj": "regény",
@@ -1397,7 +1397,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Charles Dickens",
       "cim": "Twist Olivér",
       "mufaj": "társadalmi regény",
@@ -1406,7 +1406,7 @@
     },
     {
       "era": "Realizmus",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Flaubert",
       "cim": "Bovaryné",
       "mufaj": "regény",
@@ -1415,7 +1415,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Henrik Ibsen",
       "cim": "A vadkacsa",
       "mufaj": "analitikus dráma",
@@ -1424,7 +1424,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Henrik Ibsen",
       "cim": "Nóra (Babaszoba)",
       "mufaj": "analitikus dráma",
@@ -1433,7 +1433,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Charles Baudelaire",
       "cim": "Az albatrosz",
       "mufaj": "ars poetica",
@@ -1442,7 +1442,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Paul Verlaine",
       "cim": "Őszi chanson",
       "mufaj": "elégia, dal",
@@ -1451,7 +1451,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Paul Verlaine",
       "cim": "Költészettan",
       "mufaj": "programvers, ars poetica",
@@ -1460,7 +1460,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Arthur Rimbaud",
       "cim": "A magánhangzók szonettje",
       "mufaj": "N/A",
@@ -1469,7 +1469,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Guillaume Apollinaire",
       "cim": "A megsebzett galamb és a szökőkút",
       "mufaj": "(kalligramma) képvers",
@@ -1478,7 +1478,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Franz Kafka",
       "cim": "Az átváltozás",
       "mufaj": "elbeszélés",
@@ -1487,7 +1487,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Bertolt Brecht",
       "cim": "Koldusopera",
       "mufaj": "tandráma",
@@ -1496,7 +1496,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Bertolt Brecht",
       "cim": "Kurázsi mama és gyermekei",
       "mufaj": "epikus dráma",
@@ -1505,7 +1505,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Samuel Beckett",
       "cim": "Godot-ra várva",
       "mufaj": "színmű, abszurd dráma",
@@ -1514,7 +1514,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Friedrich Dürrenmatt",
       "cim": "A fizikusok",
       "mufaj": "abszurd dráma",
@@ -1523,7 +1523,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Herczeg Ferenc",
       "cim": "Az élet kapuja",
       "mufaj": "történelmi regény",
@@ -1532,7 +1532,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Herczeg Ferenc",
       "cim": "Fekete szüret a Badacsonyon",
       "mufaj": "tárcanovella",
@@ -1541,7 +1541,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "(szerintem nem erőltetnék középszinten / “vagy”-osként ismerendő, csaknem kérdik)",
+      "category": "szerintem nem erőltetnék középszinten",
       "szerzo": "Herczeg Ferenc",
       "cim": "Bizánc",
       "mufaj": "történelmi dráma",
@@ -1550,7 +1550,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Góg és Magóg fia vagyok én…",
       "mufaj": "vezérvers, ars poetica",
@@ -1559,7 +1559,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Héja-nász az avaron",
       "mufaj": "szerelmes vers",
@@ -1568,7 +1568,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Harc a Nagyúrral",
       "mufaj": "balladás létharc-vers",
@@ -1577,7 +1577,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Új vizeken járok",
       "mufaj": "programvers, ars poetica",
@@ -1586,7 +1586,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Az ős Kaján",
       "mufaj": "balladás létharc-vers",
@@ -1595,7 +1595,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "A Sion-hegy alatt",
       "mufaj": "balladás istenes vers",
@@ -1604,7 +1604,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Az Úr érkezése",
       "mufaj": "rapszódia",
@@ -1613,7 +1613,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Kocsi-út az éjszakában",
       "mufaj": "dal",
@@ -1622,7 +1622,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Emlékezés egy nyár-éjszakára",
       "mufaj": "rapszódia",
@@ -1631,7 +1631,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Ady Endre",
       "cim": "Őrizem a szemed",
       "mufaj": "N/A",
@@ -1640,7 +1640,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Babits Mihály",
       "cim": "In Horatium",
       "mufaj": "ars poetica",
@@ -1649,7 +1649,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Babits Mihály",
       "cim": "A lírikus epilógja",
       "mufaj": "elégikus ars poetica",
@@ -1658,7 +1658,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Babits Mihály",
       "cim": "Esti kérdés",
       "mufaj": "filozofikus költemény",
@@ -1667,7 +1667,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Babits Mihály",
       "cim": "Mint különös hírmondó…",
       "mufaj": "ars poetica",
@@ -1676,7 +1676,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Babits Mihály",
       "cim": "Jónás könyve",
       "mufaj": "elbeszélő költemény",
@@ -1685,7 +1685,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Babits Mihály",
       "cim": "Jónás imája",
       "mufaj": "ars poetica, lírai önvallomás",
@@ -1694,7 +1694,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kosztolányi Dezső",
       "cim": "A szegény kisgyermek panaszai",
       "mufaj": "versciklus",
@@ -1703,7 +1703,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kosztolányi Dezső",
       "cim": "Boldog, szomorú dal",
       "mufaj": "dal",
@@ -1712,7 +1712,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kosztolányi Dezső",
       "cim": "Hajnali részegség",
       "mufaj": "N/A",
@@ -1721,7 +1721,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kosztolányi Dezső",
       "cim": "Édes Anna",
       "mufaj": "regény",
@@ -1730,7 +1730,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kosztolányi Dezső",
       "cim": "Esti Kornél",
       "mufaj": "novellaciklus",
@@ -1739,7 +1739,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Juhász Gyula",
       "cim": "Anna örök",
       "mufaj": "N/A",
@@ -1748,7 +1748,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Móricz Zsigmond",
       "cim": "Tragédia",
       "mufaj": "novella",
@@ -1757,7 +1757,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Móricz Zsigmond",
       "cim": "Úri muri",
       "mufaj": "regény",
@@ -1766,7 +1766,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Wass Albert",
       "cim": "Adjátok vissza a hegyeimet!",
       "mufaj": "regény",
@@ -1775,7 +1775,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Gyóni Géza",
       "cim": "Csak egy éjszakára",
       "mufaj": "háborúellenes vers",
@@ -1784,7 +1784,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kassák Lajos",
       "cim": "A ló meghal a madarak kirepülnek",
       "mufaj": "szabadvers",
@@ -1793,7 +1793,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Tóth Árpád",
       "cim": "Esti sugárkoszorú",
       "mufaj": "szerelmes vers",
@@ -1802,7 +1802,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Tóth Árpád",
       "cim": "Isten oltó-kése",
       "mufaj": "létösszegző ars poetica",
@@ -1811,7 +1811,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Nem én kiáltok",
       "mufaj": "szabadvers",
@@ -1820,7 +1820,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Holt vidék",
       "mufaj": "tájvers",
@@ -1829,7 +1829,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Reménytelenül",
       "mufaj": "N/A",
@@ -1838,7 +1838,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Flóra",
       "mufaj": "N/A",
@@ -1847,7 +1847,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Kései sirató",
       "mufaj": "N/A",
@@ -1856,7 +1856,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "A Dunánál",
       "mufaj": "közösségi óda",
@@ -1865,7 +1865,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Tudod, hogy nincs bocsánat",
       "mufaj": "önmegszólító vers",
@@ -1874,7 +1874,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Nem emel föl",
       "mufaj": "istenes vers",
@@ -1883,7 +1883,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "József Attila",
       "cim": "(Karóval jöttél…)",
       "mufaj": "létösszegző vers",
@@ -1892,7 +1892,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Radnóti Miklós",
       "cim": "Járkálj csak, halálraítélt",
       "mufaj": "gondolati költemény",
@@ -1901,7 +1901,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Radnóti Miklós",
       "cim": "Hetedik ecloga",
       "mufaj": "ekloga",
@@ -1910,7 +1910,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Radnóti Miklós",
       "cim": "Erőltetett menet",
       "mufaj": "elégia",
@@ -1919,7 +1919,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Radnóti Miklós",
       "cim": "Razglednicák",
       "mufaj": "életkép",
@@ -1928,7 +1928,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Szabó Magda",
       "cim": "Az ajtó",
       "mufaj": "regény",
@@ -1937,7 +1937,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Örkény István",
       "cim": "Tóték",
       "mufaj": "kisregény, dráma",
@@ -1946,7 +1946,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Reményik Sándor",
       "cim": "Halotti beszéd a hulló leveleknek",
       "mufaj": "allegorikus vers, elégia",
@@ -1955,7 +1955,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Áprily Lajos",
       "cim": "Március",
       "mufaj": "dal",
@@ -1964,7 +1964,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint középanyag",
+      "category": "Tanmenetben ajánlott, adattár kéri",
       "szerzo": "József Attila",
       "cim": "Tiszta szívvel",
       "mufaj": "ars poetica",
@@ -1973,7 +1973,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint nem középanyag",
+      "category": "Tanmenetben kéri, adattár nem kéri",
       "szerzo": "Charles Baudelaire",
       "cim": "A Romlás virágai",
       "mufaj": "verseskötet",
@@ -1982,7 +1982,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Charles Baudelaire",
       "cim": "Kapcsolatok",
       "mufaj": "programvers",
@@ -1991,7 +1991,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Arthur Rimbaud",
       "cim": "A részeg hajó",
       "mufaj": "ars poetica",
@@ -2000,7 +2000,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "T.S. Eliot",
       "cim": "A háromkirályok utazása",
       "mufaj": "szerepvers",
@@ -2009,7 +2009,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Franz Kafka",
       "cim": "A per",
       "mufaj": "disztópikus fikció",
@@ -2018,7 +2018,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Friedrich Dürrenmatt",
       "cim": "A nagy Romulus",
       "mufaj": "abszurd dráma",
@@ -2027,7 +2027,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Móricz Zsigmond",
       "cim": "Barbárok",
       "mufaj": "novella",
@@ -2036,7 +2036,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Babits Mihály",
       "cim": "Húsvét előtt",
       "mufaj": "rapszódia",
@@ -2045,7 +2045,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Babits Mihály",
       "cim": "Fortissimo",
       "mufaj": "rapszódia",
@@ -2054,7 +2054,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Kosztolányi Dezső",
       "cim": "Halotti beszéd",
       "mufaj": "elégikus hangnemű óda",
@@ -2063,7 +2063,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Kosztolányi Dezső",
       "cim": "Pacsirta",
       "mufaj": "klasszikus modern regény",
@@ -2072,7 +2072,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Karinthy Frigyes",
       "cim": "Így írtok ti",
       "mufaj": "karikatúrák",
@@ -2081,7 +2081,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Karinthy Frigyes",
       "cim": "Találkozás egy fiatalemberrel",
       "mufaj": "novella",
@@ -2090,7 +2090,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Juhász Gyula",
       "cim": "Tiszai csönd",
       "mufaj": "tájvers",
@@ -2099,7 +2099,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Örkény István",
       "cim": "Egyperces novellák",
       "mufaj": "novella-gyűjtemény",
@@ -2108,7 +2108,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Kányádi Sándor",
       "cim": "Valaki jár a fák hegyén",
       "mufaj": "létfilozófiai költemény",
@@ -2117,7 +2117,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Krúdy Gyula",
       "cim": "Szindbád",
       "mufaj": "lírai novellák",
@@ -2126,7 +2126,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Szabó Dezső",
       "cim": "Feltámadás Makucskán",
       "mufaj": "szatirikus elbeszélés",
@@ -2135,7 +2135,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Weöres Sándor",
       "cim": "Rongyszőnyeg",
       "mufaj": "versciklus",
@@ -2144,7 +2144,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Radnóti Miklós",
       "cim": "Tétova óda",
       "mufaj": "hitvesi óda",
@@ -2153,7 +2153,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Radnóti Miklós",
       "cim": "A la recherche",
       "mufaj": "elégia",
@@ -2162,7 +2162,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Dsida Jenő",
       "cim": "Nagycsütörtök",
       "mufaj": "sajátos passió",
@@ -2171,7 +2171,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Dsida Jenő",
       "cim": "Arany és kék szavakkal",
       "mufaj": "himnikus vallomás",
@@ -2180,7 +2180,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Áprily Lajos",
       "cim": "Tavasz a házsongárdi temetőben",
       "mufaj": "elégia",
@@ -2189,7 +2189,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Nagy László",
       "cim": "Ki viszi át a szerelmet",
       "mufaj": "filozófiai-létösszegző vers",
@@ -2198,7 +2198,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben ajánlott, adattár szerint nem középanyag",
+      "category": "Tanmenetben ajánlott, adattár nem kéri",
       "szerzo": "Illyés Gyula",
       "cim": "Puszták népe",
       "mufaj": "irodalmi szociográfia",
@@ -2207,7 +2207,7 @@
     },
     {
       "era": "Klasszikus és avantgárd modernitás",
-      "category": "Tanmenetben alap & adattár szerint középanyag",
+      "category": "Tanmenet kéri, adattár kéri",
       "szerzo": "Illyés Gyula",
       "cim": "Egy mondat a zsarnokságról",
       "mufaj": "rapszódikus óda",

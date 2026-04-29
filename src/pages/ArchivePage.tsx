@@ -1,14 +1,15 @@
 import { useMemo, useState } from "react";
 import { ClearableSearchInput } from "../components/ClearableSearchInput";
 import { useCharacters } from "../hooks/useCharacters";
+import { usePersistentState } from "../hooks/usePersistentState";
 import { groupByWriters } from "../lib/data";
 
 export function ArchivePage() {
   const { records, loading, error } = useCharacters();
   const writers = useMemo(() => groupByWriters(records), [records]);
   const [query, setQuery] = useState("");
-  const [showDescriptions, setShowDescriptions] = useState(false);
-  const [openBooks, setOpenBooks] = useState<Record<string, boolean>>({});
+  const [showDescriptions, setShowDescriptions] = usePersistentState<boolean>("archive-showDescriptions", false);
+  const [openBooks, setOpenBooks] = usePersistentState<Record<string, boolean>>("archive-openBooks", {});
 
   const filteredWriters = useMemo(() => {
     const value = query.toLowerCase().trim();

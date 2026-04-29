@@ -1,19 +1,30 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Memoriter } from "../types";
+import { usePersistentState, usePersistentSet } from "../hooks/usePersistentState";
 
 type GroupBy = "none" | "era" | "writer" | "genre";
+
+function getFirstLetterText(text: string): string {
+  return text.split('\n').map(line =>
+    line.split(' ').map(word => word.length > 0 ? word[0] + '...' : '').join(' ')
+  ).join('\n');
+}
 
 export function MemoriterekPage() {
   const [memoriterek, setMemoriterek] = useState<Memoriter[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [openItems, setOpenItems] = useState<Set<number>>(new Set());
-  const [groupBy, setGroupBy] = useState<GroupBy>("none");
+  const [openItemsArray, setOpenItemsArray] = usePersistentState<number[]>("memoriterek-openItems", []);
+  const [openItems, setOpenItems] = useState<Set<number>>(() => new Set(openItemsArray));
+  const [groupBy, setGroupBy] = usePersistentState<GroupBy>("memoriterek-groupBy", "none");
+  const [firstLetterMode, setFirstLetterMode] = usePersistentState<boolean>("memoriterek-firstLetterMode", false);
+  const [learnedItems, setLearnedItems] = usePersistentSet<number>("memoriterek-learned", new Set());
+  const [hideLearned, setHideLearned] = usePersistentState<boolean>("memoriterek-hideLearned", false);
 
   const [filterOpen, setFilterOpen] = useState(false);
-  const [filterEras, setFilterEras] = useState<Set<string>>(new Set());
-  const [filterWriters, setFilterWriters] = useState<Set<string>>(new Set());
-  const [filterPoems, setFilterPoems] = useState<Set<string>>(new Set());
+  const [filterEras, setFilterEras] = usePersistentSet<string>("memoriterek-filterEras", new Set());
+  const [filterWriters, setFilterWriters] = usePersistentSet<string>("memoriterek-filterWriters", new Set());
+  const [filterPoems, setFilterPoems] = usePersistentSet<string>("memoriterek-filterPoems", new Set());
 
   const filterRef = useRef<HTMLDivElement>(null);
 
@@ -60,9 +71,13 @@ export function MemoriterekPage() {
 
   const visibleIndexes = useMemo(() => {
     const hasFilters = filterEras.size > 0 || filterWriters.size > 0 || filterPoems.size > 0;
-    if (!hasFilters) return new Set(memoriterek.map((_, i) => i));
     const visible = new Set<number>();
     memoriterek.forEach((m, i) => {
+      if (hideLearned && learnedItems.has(i)) return;
+      if (!hasFilters) {
+        visible.add(i);
+        return;
+      }
       const eraMatch = filterEras.has(m["keletkezési dátum"]);
       const writerMatch = filterWriters.has(m["Szerző"]);
       const poemMatch = filterPoems.has(`${m["Szerző"]} – ${m["cím"]}`);
@@ -71,7 +86,7 @@ export function MemoriterekPage() {
       }
     });
     return visible;
-  }, [memoriterek, filterEras, filterWriters, filterPoems]);
+  }, [memoriterek, filterEras, filterWriters, filterPoems, learnedItems, hideLearned]);
 
   const activeFilterCount = filterEras.size + filterWriters.size + filterPoems.size;
 
@@ -114,6 +129,7 @@ export function MemoriterekPage() {
       const next = new Set(prev);
       if (next.has(index)) next.delete(index);
       else next.add(index);
+      setOpenItemsArray(Array.from(next));
       return next;
     });
   };
@@ -141,6 +157,15 @@ export function MemoriterekPage() {
       const next = new Set(prev);
       if (next.has(label)) next.delete(label);
       else next.add(label);
+      return next;
+    });
+  };
+
+  const toggleLearnedItem = (index: number) => {
+    setLearnedItems((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) next.delete(index);
+      else next.add(index);
       return next;
     });
   };
@@ -222,6 +247,20 @@ export function MemoriterekPage() {
             <div className="archive-controls">
               <button
                 type="button"
+                className={`archive-control-btn${firstLetterMode ? " active" : ""}`}
+                onClick={() => setFirstLetterMode(!firstLetterMode)}
+              >
+                {firstLetterMode ? "Normál mód" : "Csak első betű"}
+              </button>
+              <button
+                type="button"
+                className={`archive-control-btn${hideLearned ? " active" : ""}`}
+                onClick={() => setHideLearned(!hideLearned)}
+              >
+                {hideLearned ? "Megtanultak mutatása" : "Megtanultak elrejtése"}
+              </button>
+              <button
+                type="button"
                 className="archive-control-btn"
                 onClick={() => {
                   const next = new Set<number>();
@@ -229,6 +268,7 @@ export function MemoriterekPage() {
                     if (visibleIndexes.has(i)) next.add(i);
                   }
                   setOpenItems(next);
+                  setOpenItemsArray(Array.from(next));
                 }}
                 disabled={allOpen}
               >
@@ -237,7 +277,10 @@ export function MemoriterekPage() {
               <button
                 type="button"
                 className="archive-control-btn"
-                onClick={() => setOpenItems(new Set())}
+                onClick={() => {
+                  setOpenItems(new Set());
+                  setOpenItemsArray([]);
+                }}
               >
                 Összes bezárása
               </button>
@@ -254,7 +297,7 @@ export function MemoriterekPage() {
           groupedData.type === "none" ? (
             <div className="memoriter-list">
               {groupedData.items.map(({ memo, index }) => (
-                <MemoriterCard key={index} memo={memo} index={index} isOpen={openItems.has(index)} onToggle={togglePoemOpen} />
+                <MemoriterCard key={index} memo={memo} index={index} isOpen={openItems.has(index)} onToggle={togglePoemOpen} firstLetterMode={firstLetterMode} learned={learnedItems.has(index)} onToggleLearned={toggleLearnedItem} />
               ))}
             </div>
           ) : (
@@ -263,9 +306,9 @@ export function MemoriterekPage() {
                 <section key={group.key} className="memoriter-group">
                   <h3 className="memoriter-group-header">{group.label}</h3>
                   <div className="memoriter-list">
-                    {group.items.map(({ memo, index }) => (
-                      <MemoriterCard key={index} memo={memo} index={index} isOpen={openItems.has(index)} onToggle={togglePoemOpen} />
-                    ))}
+                     {group.items.map(({ memo, index }) => (
+                       <MemoriterCard key={index} memo={memo} index={index} isOpen={openItems.has(index)} onToggle={togglePoemOpen} firstLetterMode={firstLetterMode} learned={learnedItems.has(index)} onToggleLearned={toggleLearnedItem} />
+                     ))}
                   </div>
                 </section>
               ))}
@@ -329,13 +372,27 @@ type MemoriterCardProps = {
   index: number;
   isOpen: boolean;
   onToggle: (index: number) => void;
+  firstLetterMode: boolean;
+  learned: boolean;
+  onToggleLearned: (index: number) => void;
 };
 
-function MemoriterCard({ memo, index, isOpen, onToggle }: MemoriterCardProps) {
+function MemoriterCard({ memo, index, isOpen, onToggle, firstLetterMode, learned, onToggleLearned }: MemoriterCardProps) {
+  const displayText = firstLetterMode ? getFirstLetterText(memo["mű szövege"]) : memo["mű szövege"];
   return (
     <article className="memoriter-item">
       <div className="memoriter-meta">
-        <h2 className="memoriter-title">{memo["cím"]}</h2>
+        <div className="memoriter-header-row">
+          <h2 className="memoriter-title">{memo["cím"]}</h2>
+          <label className="memoriter-learned-toggle">
+            <input
+              type="checkbox"
+              checked={learned}
+              onChange={() => onToggleLearned(index)}
+            />
+            <span>Megtanultam</span>
+          </label>
+        </div>
         <p className="memoriter-author">{memo["Szerző"]}</p>
         {memo["keletkezési dátum"] !== "N/A" ? (
           <p className="memoriter-date">{memo["keletkezési dátum"]}</p>
@@ -357,7 +414,7 @@ function MemoriterCard({ memo, index, isOpen, onToggle }: MemoriterCardProps) {
         >
           Szöveg megtekintése
         </summary>
-        <pre className="memoriter-text">{memo["mű szövege"]}</pre>
+        <pre className="memoriter-text">{displayText}</pre>
       </details>
     </article>
   );

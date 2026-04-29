@@ -40,6 +40,7 @@ export function FiveChoicePage() {
   const [score, setScore] = useState(0);
   const [selectedTitle, setSelectedTitle] = useState<string | null>(null);
   const [showHint, setShowHint] = useState(false);
+  const [earlyFinishCount, setEarlyFinishCount] = useState<number | null>(null);
 
   const questions = useMemo(() => buildQuestions(records, restartSeed), [records, restartSeed]);
 
@@ -53,6 +54,7 @@ export function FiveChoicePage() {
     setScore(0);
     setSelectedTitle(null);
     setShowHint(false);
+    setEarlyFinishCount(null);
   }
 
   return (
@@ -72,10 +74,10 @@ export function FiveChoicePage() {
           <div className="done-card">
             <h2>Vége!</h2>
             <p className="score">
-              {score} / {questions.length}
+              {score} / {earlyFinishCount ?? questions.length}
             </p>
             <p className="score-detail">
-              Helyes válaszok aránya: {Math.round((score / questions.length) * 100)}%
+              Helyes válaszok aránya: {Math.round((score / (earlyFinishCount ?? questions.length)) * 100)}%
             </p>
             <div className="game-controls">
               <button type="button" onClick={restart}>
@@ -173,6 +175,16 @@ export function FiveChoicePage() {
                 }}
               >
                 Következő
+              </button>
+              <button
+                type="button"
+                hidden={!selectedTitle}
+                onClick={() => {
+                  setEarlyFinishCount(currentIndex + 1);
+                  setCurrentIndex(questions.length);
+                }}
+              >
+                Befejezés most
               </button>
             </div>
 
