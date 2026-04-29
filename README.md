@@ -21,5 +21,6 @@ bun run preview
 - `/archive` – szerző/mű/karakter adattár
 - `/tasks` – feladatok
 - `/tasks/five-from-one` – "Öt közül egy" játék
+- `/tasks/gonosztablazat` – "Gonosztáblázat" játék (gonosztext_grouped adatokkal)
 
 Legacy `.html` routes are redirected in-app to the new route structure.

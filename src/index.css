@@ -821,6 +821,167 @@ button:disabled {
   margin-bottom: 20px;
 }
 
+.gonosz-page {
+  width: min(100%, 1100px);
+}
+
+.gonosz-config {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gonosz-config-summary {
+  text-align: left;
+}
+
+.gonosz-config-error {
+  color: #dc2626;
+  text-align: left;
+}
+
+.gonosz-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.gonosz-filter {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: var(--bg);
+}
+
+.gonosz-filter summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.gonosz-filter-count {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.gonosz-filter-actions {
+  margin-top: 8px;
+}
+
+.gonosz-filter-options {
+  margin-top: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  overscroll-behavior: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gonosz-filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.gonosz-table-wrap {
+  overflow-x: auto;
+  overscroll-behavior: none;
+}
+
+.gonosz-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.gonosz-table th,
+.gonosz-table td {
+  border: 1px solid var(--border);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+
+.gonosz-table th {
+  background: var(--bg);
+  white-space: nowrap;
+}
+
+.gonosz-table td.revealed {
+  background: rgba(31, 79, 122, 0.12);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .gonosz-table td.revealed {
+  background: rgba(59, 130, 184, 0.25);
+}
+
+.gonosz-table td.cell-correct {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.gonosz-table td.cell-wrong {
+  background: rgba(239, 68, 68, 0.14);
+}
+
+.gonosz-table td small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.gonosz-table select {
+  width: 100%;
+  font: inherit;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.gonosz-options {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.gonosz-options h3 {
+  margin: 0 0 12px;
+}
+
+.gonosz-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.gonosz-option-group h4 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+}
+
+.gonosz-option-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.gonosz-chip {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+}
+
+.gonosz-round-score {
+  margin-top: 14px;
+}
+
 @media (max-width: 560px) {
   .navbar-inner {
     padding: 10px 16px;

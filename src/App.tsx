@@ -3,6 +3,7 @@ import { AppLayout } from "./components/AppLayout";
 import { ArchivePage } from "./pages/ArchivePage";
 import { BooksPage } from "./pages/BooksPage";
 import { FiveChoicePage } from "./pages/FiveChoicePage";
+import { GonoszTablazatPage } from "./pages/GonoszTablazatPage";
 import { HomePage } from "./pages/HomePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { ReaderPage } from "./pages/ReaderPage";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/archive" element={<ArchivePage />} />
           <Route path="/tasks" element={<TasksPage />} />
           <Route path="/tasks/five-from-one" element={<FiveChoicePage />} />
+          <Route path="/tasks/gonosztablazat" element={<GonoszTablazatPage />} />
           {redirects.map(([from, to]) => (
             <Route key={from} path={from} element={<Navigate replace to={to} />} />
           ))}

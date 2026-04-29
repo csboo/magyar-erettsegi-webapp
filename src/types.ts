@@ -28,3 +28,13 @@ export type WriterGroup = {
   writer: string;
   books: BookGroup[];
 };
+
+export type GonoszRecord = {
+  era: string;
+  category: string;
+  szerzo: string;
+  cim: string;
+  mufaj: string;
+  szazad: string;
+  stilus: string;
+};
