@@ -169,6 +169,7 @@ export function GonoszTablazatPage() {
   const [round, setRound] = useState<RoundState | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [evaluated, setEvaluated] = useState(false);
+  const [hardMode, setHardMode] = useState(false);
   const [finished, setFinished] = useState(false);
   const [roundIndex, setRoundIndex] = useState(0);
   const [totalCorrect, setTotalCorrect] = useState(0);
@@ -190,6 +191,18 @@ export function GonoszTablazatPage() {
       ),
     [filters, indexedRecords],
   );
+  const sessionOptionPools = useMemo(() => {
+    const pools = createEmptyFilters();
+    if (!sessionRecords) {
+      return pools;
+    }
+    for (const field of GAME_FIELDS) {
+      pools[field.key] = Array.from(new Set(sessionRecords.map((record) => record[field.key]).filter(Boolean))).sort(
+        (a, b) => a.localeCompare(b, "hu"),
+      );
+    }
+    return pools;
+  }, [sessionRecords]);
 
   const currentRoundScore = useMemo(() => {
     if (!round || !evaluated) {
@@ -260,6 +273,7 @@ export function GonoszTablazatPage() {
     setRound(firstRound);
     setAnswers({});
     setEvaluated(false);
+    setHardMode(false);
     setFinished(false);
     setRoundIndex(1);
     setTotalCorrect(0);
@@ -320,6 +334,7 @@ export function GonoszTablazatPage() {
     setUsedIds([]);
     setAnswers({});
     setEvaluated(false);
+    setHardMode(false);
     setFinished(false);
     setRoundIndex(0);
     setTotalCorrect(0);
@@ -465,6 +480,18 @@ export function GonoszTablazatPage() {
       </header>
 
       <section className="card">
+        <div className="toolbar">
+          <label className="toggle">
+            <input
+              type="checkbox"
+              checked={hardMode}
+              onChange={(event) => setHardMode(event.target.checked)}
+            />
+            <span className="toggle-track" />
+            <span className="toggle-label">Nehéz mód</span>
+          </label>
+        </div>
+
         <div className="gonosz-table-wrap">
           <table className="gonosz-table">
             <thead>
@@ -514,9 +541,14 @@ export function GonoszTablazatPage() {
                             }
                           >
                             <option value="">Válassz...</option>
-                            {Object.keys(round.optionCounts[field.key])
-                              .sort((a, b) => a.localeCompare(b, "hu"))
-                              .filter((option) => (remainingOptionCounts[field.key][option] ?? 0) > 0 || option === value)
+                            {(hardMode
+                              ? sessionOptionPools[field.key]
+                              : Object.keys(round.optionCounts[field.key])
+                                  .sort((a, b) => a.localeCompare(b, "hu"))
+                                  .filter(
+                                    (option) =>
+                                      (remainingOptionCounts[field.key][option] ?? 0) > 0 || option === value,
+                                  ))
                               .map((option) => (
                                 <option key={option} value={option}>
                                   {option}
@@ -533,27 +565,29 @@ export function GonoszTablazatPage() {
           </table>
         </div>
 
-        <section className="gonosz-options">
-          <h3>Elérhető opciók</h3>
-          <div className="gonosz-options-grid">
-            {GAME_FIELDS.map((field) => (
-              <div key={field.key} className="gonosz-option-group">
-                <h4>{field.label}</h4>
-                <div className="gonosz-option-chips">
-                  {Object.entries(remainingOptionCounts[field.key])
-                    .filter(([, count]) => count > 0)
-                    .sort(([a], [b]) => a.localeCompare(b, "hu"))
-                    .map(([option, count]) => (
-                      <span key={`${field.key}-${option}`} className="gonosz-chip">
-                        {option}
-                        {count > 1 ? ` (${count})` : ""}
-                      </span>
-                    ))}
+        {!hardMode ? (
+          <section className="gonosz-options">
+            <h3>Elérhető opciók</h3>
+            <div className="gonosz-options-grid">
+              {GAME_FIELDS.map((field) => (
+                <div key={field.key} className="gonosz-option-group">
+                  <h4>{field.label}</h4>
+                  <div className="gonosz-option-chips">
+                    {Object.entries(remainingOptionCounts[field.key])
+                      .filter(([, count]) => count > 0)
+                      .sort(([a], [b]) => a.localeCompare(b, "hu"))
+                      .map(([option, count]) => (
+                        <span key={`${field.key}-${option}`} className="gonosz-chip">
+                          {option}
+                          {count > 1 ? ` (${count})` : ""}
+                        </span>
+                      ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         {evaluated && currentRoundScore ? (
           <p className="status gonosz-round-score">
