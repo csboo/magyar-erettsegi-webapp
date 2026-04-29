@@ -6,8 +6,8 @@ type NavbarProps = {
 };
 
 const navItems = [
-  { to: "/reader", label: "Karakterek" },
-  { to: "/books", label: "Művek" },
+  // { to: "/reader", label: "Karakterek" },
+  // { to: "/books", label: "Művek" },
   { to: "/search", label: "Keresés" },
   { to: "/archive", label: "Adattár" },
   { to: "/tasks", label: "Feladatok" },
