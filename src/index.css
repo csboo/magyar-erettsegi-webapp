@@ -682,6 +682,53 @@ button:disabled {
   color: var(--button);
 }
 
+.char-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hint-btn {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  padding: 0;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hint-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hint-panel {
+  margin-top: 10px;
+  text-align: left;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.hint-panel p {
+  margin: 0 0 8px;
+}
+
+.hint-panel p:last-child {
+  margin-bottom: 0;
+}
+
 .options {
   display: flex;
   flex-direction: column;

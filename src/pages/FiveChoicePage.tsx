@@ -7,6 +7,8 @@ import type { CharacterRecord } from "../types";
 type Question = {
   characterName: string;
   correctTitle: string;
+  writer: string;
+  description: string;
   options: string[];
 };
 
@@ -24,6 +26,8 @@ function buildQuestions(records: CharacterRecord[], seed: number): Question[] {
     return {
       characterName: record.name,
       correctTitle: record.title,
+      writer: record.writer,
+      description: record.description,
       options: shuffle([record.title, ...wrongTitles]),
     };
   });
@@ -35,6 +39,7 @@ export function FiveChoicePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedTitle, setSelectedTitle] = useState<string | null>(null);
+  const [showHint, setShowHint] = useState(false);
 
   const questions = useMemo(() => buildQuestions(records, restartSeed), [records, restartSeed]);
 
@@ -47,6 +52,7 @@ export function FiveChoicePage() {
     setCurrentIndex(0);
     setScore(0);
     setSelectedTitle(null);
+    setShowHint(false);
   }
 
   return (
@@ -85,7 +91,35 @@ export function FiveChoicePage() {
           <>
             <div className="game-question">
               <p className="question-label">Melyik műben szerepel?</p>
-              <div className="char-name">{currentQuestion.characterName}</div>
+              <div className="char-name-row">
+                <div className="char-name">{currentQuestion.characterName}</div>
+                <button
+                  type="button"
+                  className="hint-btn"
+                  aria-label="Tipp mutatása"
+                  aria-expanded={showHint}
+                  onClick={() => setShowHint((value) => !value)}
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 18h6M10 22h4M8.5 14.5C7.6 13.7 7 12.6 7 11.3A5 5 0 0 1 12 6a5 5 0 0 1 5 5.3c0 1.3-.6 2.4-1.5 3.2-.7.6-1.2 1.5-1.3 2.5h-4.4c-.1-1-.6-1.9-1.3-2.5Z" />
+                  </svg>
+                </button>
+              </div>
+              {showHint ? (
+                <div className="hint-panel">
+                  <p>
+                    <strong>Szerző:</strong> {currentQuestion.writer}
+                  </p>
+                  <p>
+                    <strong>Mű:</strong> {currentQuestion.correctTitle}
+                  </p>
+                  {currentQuestion.description ? (
+                    <p>
+                      <strong>Leírás:</strong> {currentQuestion.description}
+                    </p>
+                  ) : null}
+                </div>
+              ) : null}
             </div>
 
             <div className="options">
@@ -135,6 +169,7 @@ export function FiveChoicePage() {
                 onClick={() => {
                   setCurrentIndex((value) => value + 1);
                   setSelectedTitle(null);
+                  setShowHint(false);
                 }}
               >
                 Következő
