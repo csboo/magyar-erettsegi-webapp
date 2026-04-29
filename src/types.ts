@@ -29,6 +29,15 @@ export type WriterGroup = {
   books: BookGroup[];
 };
 
+export type Memoriter = {
+  "Szerző": string;
+  "cím": string;
+  "keletkezési dátum": string;
+  "verseles": string;
+  "műfaj": string;
+  "mű szövege": string;
+};
+
 export type GonoszRecord = {
   era: string;
   category: string;

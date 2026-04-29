@@ -10,6 +10,7 @@ const navItems = [
   // { to: "/books", label: "Művek" },
   { to: "/search", label: "Keresés" },
   { to: "/archive", label: "Adattár" },
+  { to: "/memoriterek", label: "Memoriterek" },
   { to: "/tasks", label: "Feladatok" },
 ];
 

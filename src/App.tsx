@@ -5,6 +5,7 @@ import { BooksPage } from "./pages/BooksPage";
 import { FiveChoicePage } from "./pages/FiveChoicePage";
 import { GonoszTablazatPage } from "./pages/GonoszTablazatPage";
 import { HomePage } from "./pages/HomePage";
+import { MemoriterekPage } from "./pages/MemoriterekPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { ReaderPage } from "./pages/ReaderPage";
 import { SearchPage } from "./pages/SearchPage";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/tasks" element={<TasksPage />} />
           <Route path="/tasks/five-from-one" element={<FiveChoicePage />} />
           <Route path="/tasks/gonosztablazat" element={<GonoszTablazatPage />} />
+          <Route path="/memoriterek" element={<MemoriterekPage />} />
           {redirects.map(([from, to]) => (
             <Route key={from} path={from} element={<Navigate replace to={to} />} />
           ))}

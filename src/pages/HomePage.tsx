@@ -7,19 +7,19 @@ const links = [
     description: "Fuzzy keresés karakterek, művek és szerzők között",
   },
   {
-    to: "/reader",
-    title: "Karakterek",
-    description: "Irodalmi karakterek összefoglalói, egyesével lapozva",
-  },
-  {
-    to: "/books",
-    title: "Művek",
-    description: "Művek szerinti csoportosítás, karakterlistával",
-  },
-  {
     to: "/archive",
     title: "Adattár",
     description: "Szerzők, művek és karakterek áttekintése",
+  },
+  {
+    to: "/memoriterek",
+    title: "Memoriterek",
+    description: "Tanulandó versek és idézetek áttekintése",
+  },
+  {
+    to: "/tasks",
+    title: "Feladatok",
+    description: "Gyakorló feladatok az érettségire",
   },
 ];
 
