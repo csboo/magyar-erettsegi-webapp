@@ -910,6 +910,50 @@ button:disabled {
   white-space: nowrap;
 }
 
+.gonosz-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.gonosz-table th.sortable:hover {
+  background: var(--border);
+}
+
+.gonosz-table .expand-col {
+  width: 36px;
+  text-align: center;
+}
+
+.expand-btn {
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  min-width: auto;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.expand-btn:hover {
+  color: var(--text);
+}
+
+.gonosz-table .detail-row {
+  background: var(--bg);
+}
+
+.gonosz-detail {
+  padding: 12px 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.gonosz-detail p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .gonosz-table td.revealed {
   background: rgba(31, 79, 122, 0.12);
   font-weight: 600;

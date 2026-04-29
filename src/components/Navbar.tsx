@@ -11,6 +11,7 @@ const navItems = [
   { to: "/search", label: "Keresés" },
   { to: "/archive", label: "Adattár" },
   { to: "/memoriterek", label: "Memoriterek" },
+  { to: "/gonosz-adatok", label: "Gonosz adatok" },
   { to: "/tasks", label: "Feladatok" },
 ];
 
