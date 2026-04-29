@@ -62,7 +62,7 @@ export function GonoszAdatokPage() {
   }, [records]);
 
   const filteredAndSorted = useMemo(() => {
-    let result = records.filter((r) => {
+    const result = records.filter((r) => {
       if (filterEras.size > 0 && !filterEras.has(r.era)) return false;
       if (filterWriters.size > 0 && !filterWriters.has(r.szerzo)) return false;
       if (filterMufaj.size > 0 && !filterMufaj.has(r.mufaj)) return false;
