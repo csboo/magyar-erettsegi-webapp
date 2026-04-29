@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { ClearableSearchInput } from "../components/ClearableSearchInput";
 import { useCharacters } from "../hooks/useCharacters";
 import { useDebouncedValue } from "../hooks/useDebouncedValue";
 import { groupForSearch } from "../lib/data";
@@ -110,13 +111,10 @@ export function SearchPage() {
       </header>
 
       <div className="search-bar">
-        <input
-          type="text"
+        <ClearableSearchInput
           value={query}
-          onChange={(event) => setQuery(event.target.value)}
+          onChange={setQuery}
           placeholder="Keress karakterre, műre vagy szerzőre..."
-          autoComplete="off"
-          spellCheck={false}
         />
         <span className="search-count">
           {query.trim()
