@@ -5,6 +5,7 @@ export function MemoriterekPage() {
   const [memoriterek, setMemoriterek] = useState<Memoriter[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     fetch("/memoriterek.json")
@@ -24,12 +25,42 @@ export function MemoriterekPage() {
       });
   }, []);
 
+  const allOpen = memoriterek.length > 0 && memoriterek.every((_, i) => openItems[i]);
+
   return (
     <section className="memoriterek">
       <header className="header">
         <h1>Memoriterek</h1>
         <p>{memoriterek.length ? `${memoriterek.length} mű` : ""}</p>
       </header>
+
+      {memoriterek.length > 0 ? (
+        <div className="toolbar">
+          <div className="archive-controls">
+            <button
+              type="button"
+              className="archive-control-btn"
+              onClick={() => {
+                const next: Record<number, boolean> = {};
+                for (const i of memoriterek.keys()) {
+                  next[i] = true;
+                }
+                setOpenItems(next);
+              }}
+              disabled={allOpen}
+            >
+              Összes lenyitása
+            </button>
+            <button
+              type="button"
+              className="archive-control-btn"
+              onClick={() => setOpenItems({})}
+            >
+              Összes bezárása
+            </button>
+          </div>
+        </div>
+      ) : null}
 
       <section className="card memoriterek-card" aria-live="polite">
         {loading ? <p className="status">Betöltés...</p> : null}
@@ -49,7 +80,17 @@ export function MemoriterekPage() {
                     {memo["verseles"]} · {memo["műfaj"]}
                   </p>
                 </div>
-                <pre className="memoriter-text">{memo["mű szövege"]}</pre>
+                <details
+                  className="memoriter-dropdown"
+                  open={Boolean(openItems[index])}
+                  onToggle={(event) => {
+                    const isOpen = event.currentTarget.open;
+                    setOpenItems((current) => ({ ...current, [index]: isOpen }));
+                  }}
+                >
+                  <summary className="memoriter-dropdown-summary">Szöveg megtekintése</summary>
+                  <pre className="memoriter-text">{memo["mű szövege"]}</pre>
+                </details>
               </article>
             ))}
           </div>
