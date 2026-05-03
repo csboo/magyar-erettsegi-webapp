@@ -110,19 +110,27 @@ export function GonoszAdatokPage() {
   const [filterSzazad, setFilterSzazad] = usePersistentSet<string>("gonoszadatok-filterSzazad", new Set());
   const [filterStilus, setFilterStilus] = usePersistentSet<string>("gonoszadatok-filterStilus", new Set());
   const [filterCategory, setFilterCategory] = usePersistentSet<string>("gonoszadatok-filterCategory", new Set());
+  const [tableConfigOpen, setTableConfigOpen] = useState(false);
+  const [hiddenColumns, setHiddenColumns] = usePersistentSet<SortField>("gonoszadatok-hiddenColumns", new Set());
+  const [dedupColumns, setDedupColumns] = usePersistentSet<SortField>("gonoszadatok-dedupColumns", new Set());
 
   const filterRef = useRef<HTMLDivElement>(null);
+  const tableConfigRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!filterOpen) return;
+    if (!filterOpen && !tableConfigOpen) return;
     function handler(e: MouseEvent) {
-      if (filterRef.current && !filterRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      if (filterRef.current && !filterRef.current.contains(target)) {
         setFilterOpen(false);
+      }
+      if (tableConfigRef.current && !tableConfigRef.current.contains(target)) {
+        setTableConfigOpen(false);
       }
     }
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
-  }, [filterOpen]);
+  }, [filterOpen, tableConfigOpen]);
 
   const filterOptions = useMemo(() => {
     const options: Record<string, string[]> = {};
@@ -161,10 +169,47 @@ export function GonoszAdatokPage() {
       return sortDirection === "asc" ? cmp : -cmp;
     });
 
-    return result;
-  }, [records, filterEras, filterWriters, filterMufaj, filterSzazad, filterStilus, filterCategory, sortField, sortDirection]);
+    if (dedupColumns.size === 0) {
+      return result;
+    }
+
+    const seenByField = new Map<SortField, Set<string>>();
+    for (const field of dedupColumns) {
+      seenByField.set(field, new Set());
+    }
+
+    return result.filter((row) => {
+      for (const field of dedupColumns) {
+        const value = String(row[field]);
+        if (seenByField.get(field)?.has(value)) {
+          return false;
+        }
+      }
+      for (const field of dedupColumns) {
+        seenByField.get(field)?.add(String(row[field]));
+      }
+      return true;
+    });
+  }, [
+    records,
+    filterEras,
+    filterWriters,
+    filterMufaj,
+    filterSzazad,
+    filterStilus,
+    filterCategory,
+    sortField,
+    sortDirection,
+    dedupColumns,
+  ]);
+
+  const visibleFields = useMemo(
+    () => DISPLAY_FIELDS.filter((field) => !hiddenColumns.has(field.key)),
+    [hiddenColumns],
+  );
 
   const activeFilterCount = filterEras.size + filterWriters.size + filterMufaj.size + filterSzazad.size + filterStilus.size + filterCategory.size;
+  const activeTableConfigCount = hiddenColumns.size + dedupColumns.size;
 
   function toggleFilter(field: SortField, value: string) {
     const setters: Record<string, (value: Set<string> | ((prev: Set<string>) => Set<string>)) => void> = {
@@ -196,6 +241,34 @@ export function GonoszAdatokPage() {
     };
     const setter = setters[field as string];
     if (setter) setter(new Set());
+  }
+
+  function toggleHiddenColumn(field: SortField) {
+    setHiddenColumns((prev) => {
+      const next = new Set(prev);
+      if (next.has(field)) {
+        next.delete(field);
+      } else {
+        const currentlyVisible = DISPLAY_FIELDS.length - next.size;
+        if (currentlyVisible <= 1) {
+          return next;
+        }
+        next.add(field);
+      }
+      return next;
+    });
+  }
+
+  function toggleDedupColumn(field: SortField) {
+    setDedupColumns((prev) => {
+      const next = new Set(prev);
+      if (next.has(field)) {
+        next.delete(field);
+      } else {
+        next.add(field);
+      }
+      return next;
+    });
   }
 
   function handleSort(field: SortField) {
@@ -300,6 +373,53 @@ export function GonoszAdatokPage() {
                 </div>
               ) : null}
             </div>
+            <div className="gonosz-filter-wrap" ref={tableConfigRef}>
+              <button
+                className={`gonosz-filter-btn${tableConfigOpen ? " open" : ""}`}
+                onClick={() => setTableConfigOpen(!tableConfigOpen)}
+              >
+                Táblázat beállítások
+                {activeTableConfigCount > 0 ? (
+                  <span className="gonosz-filter-badge">{activeTableConfigCount}</span>
+                ) : null}
+              </button>
+              {tableConfigOpen ? (
+                <div className="gonosz-filter-panel gonosz-table-config-panel">
+                  <div className="gonosz-table-config-group">
+                    <h3>Oszlopok elrejtése</h3>
+                    {DISPLAY_FIELDS.map((field) => {
+                      const isHidden = hiddenColumns.has(field.key);
+                      const visibleCount = DISPLAY_FIELDS.length - hiddenColumns.size;
+                      const disableHide = !isHidden && visibleCount <= 1;
+                      return (
+                        <label key={`hide-${field.key}`} className="filter-option">
+                          <input
+                            type="checkbox"
+                            checked={isHidden}
+                            disabled={disableHide}
+                            onChange={() => toggleHiddenColumn(field.key)}
+                          />
+                          <span>{field.label}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
+                  <div className="gonosz-table-config-group">
+                    <h3>Duplikáció szűrése oszlop szerint</h3>
+                    {DISPLAY_FIELDS.map((field) => (
+                      <label key={`dedup-${field.key}`} className="filter-option">
+                        <input
+                          type="checkbox"
+                          checked={dedupColumns.has(field.key)}
+                          onChange={() => toggleDedupColumn(field.key)}
+                        />
+                        <span>{field.label}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
 
@@ -307,7 +427,7 @@ export function GonoszAdatokPage() {
           <table className="gonosz-table">
             <thead>
               <tr>
-                {DISPLAY_FIELDS.map((field) => (
+                {visibleFields.map((field) => (
                   <th
                     key={field.key}
                     className="sortable"
@@ -322,7 +442,7 @@ export function GonoszAdatokPage() {
             <tbody>
               {filteredAndSorted.map((record, index) => (
                 <tr key={index}>
-                  {DISPLAY_FIELDS.map((field) => (
+                  {visibleFields.map((field) => (
                     <td key={field.key}>{record[field.key]}</td>
                   ))}
                 </tr>

@@ -1278,6 +1278,21 @@ button:disabled {
   gap: 8px;
 }
 
+.gonosz-table-config-panel {
+  min-width: 340px;
+}
+
+.gonosz-table-config-group {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.gonosz-table-config-group h3 {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+}
+
 .filter-section {
   border: 1px solid var(--border);
   border-radius: 8px;
