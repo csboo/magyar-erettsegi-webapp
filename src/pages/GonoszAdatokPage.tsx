@@ -25,6 +25,79 @@ const FILTER_FIELDS: Array<{ key: SortField; label: string }> = [
   { key: "category", label: "Kategória" },
 ];
 
+const ERA_ORDER = [
+  "okor",
+  "kozepkor",
+  "reneszansz",
+  "barokkrokoko",
+  "felvilagosodas",
+  "romantika",
+  "realizmus",
+  "klasszikusesavantgardmodernitas",
+] as const;
+
+function normalizeSortText(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function compareEra(a: string, b: string): number {
+  const aNorm = normalizeSortText(a);
+  const bNorm = normalizeSortText(b);
+  const aIndex = ERA_ORDER.indexOf(aNorm as (typeof ERA_ORDER)[number]);
+  const bIndex = ERA_ORDER.indexOf(bNorm as (typeof ERA_ORDER)[number]);
+
+  if (aIndex !== -1 && bIndex !== -1 && aIndex !== bIndex) {
+    return aIndex - bIndex;
+  }
+  if (aIndex !== -1 && bIndex === -1) {
+    return -1;
+  }
+  if (aIndex === -1 && bIndex !== -1) {
+    return 1;
+  }
+  return a.localeCompare(b, "hu");
+}
+
+function parseCentury(value: string): { isBce: boolean; num: number | null } {
+  const bceMatch = value.match(/kr\.?\s*e\.?\s*(\d+)/i);
+  if (bceMatch) {
+    return { isBce: true, num: Number.parseInt(bceMatch[1], 10) };
+  }
+
+  const ceMatch = value.match(/(\d+)\s*\./);
+  if (ceMatch) {
+    return { isBce: false, num: Number.parseInt(ceMatch[1], 10) };
+  }
+
+  return { isBce: false, num: null };
+}
+
+function compareCentury(a: string, b: string): number {
+  const aParsed = parseCentury(a);
+  const bParsed = parseCentury(b);
+
+  if (aParsed.isBce !== bParsed.isBce) {
+    return aParsed.isBce ? -1 : 1;
+  }
+
+  if (aParsed.num !== null && bParsed.num !== null && aParsed.num !== bParsed.num) {
+    return aParsed.num - bParsed.num;
+  }
+
+  if (aParsed.num !== null && bParsed.num === null) {
+    return -1;
+  }
+  if (aParsed.num === null && bParsed.num !== null) {
+    return 1;
+  }
+
+  return a.localeCompare(b, "hu");
+}
+
 export function GonoszAdatokPage() {
   const { records, loading, error } = useGonoszRecords();
   const [sortField, setSortField] = usePersistentState<SortField>("gonoszadatok-sortField", "era");
@@ -75,7 +148,16 @@ export function GonoszAdatokPage() {
     result.sort((a, b) => {
       const aVal = String(a[sortField]);
       const bVal = String(b[sortField]);
-      const cmp = aVal.localeCompare(bVal, "hu");
+      let cmp: number;
+
+      if (sortField === "era") {
+        cmp = compareEra(aVal, bVal);
+      } else if (sortField === "szazad") {
+        cmp = compareCentury(aVal, bVal);
+      } else {
+        cmp = aVal.localeCompare(bVal, "hu");
+      }
+
       return sortDirection === "asc" ? cmp : -cmp;
     });
 
