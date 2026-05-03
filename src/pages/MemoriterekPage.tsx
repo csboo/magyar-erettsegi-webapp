@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { FontSizeControls } from "../components/FontSizeControls";
 import type { Memoriter } from "../types";
 import { usePersistentState, usePersistentSet } from "../hooks/usePersistentState";
 
@@ -20,6 +21,7 @@ export function MemoriterekPage() {
   const [firstLetterMode, setFirstLetterMode] = usePersistentState<boolean>("memoriterek-firstLetterMode", false);
   const [learnedItems, setLearnedItems] = usePersistentSet<number>("memoriterek-learned", new Set());
   const [hideLearned, setHideLearned] = usePersistentState<boolean>("memoriterek-hideLearned", false);
+  const [fontScale, setFontScale] = usePersistentState<number>("memoriterek-fontScale", 1);
 
   const [filterOpen, setFilterOpen] = useState(false);
   const [filterEras, setFilterEras] = usePersistentSet<string>("memoriterek-filterEras", new Set());
@@ -245,6 +247,7 @@ export function MemoriterekPage() {
             </div>
 
             <div className="archive-controls">
+              <FontSizeControls value={fontScale} onChange={setFontScale} />
               <button
                 type="button"
                 className={`archive-control-btn${firstLetterMode ? " active" : ""}`}
@@ -289,7 +292,11 @@ export function MemoriterekPage() {
         </div>
       ) : null}
 
-      <section className="card memoriterek-card" aria-live="polite">
+      <section
+        className="card memoriterek-card font-scale-target"
+        aria-live="polite"
+        style={{ "--content-font-scale": fontScale } as CSSProperties}
+      >
         {loading ? <p className="status">Betöltés...</p> : null}
         {error ? <p className="status">{error}</p> : null}
         {!loading && !error && memoriterek.length === 0 ? <p className="status">Nincs találat.</p> : null}

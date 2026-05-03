@@ -294,6 +294,19 @@ button:disabled {
   flex-wrap: wrap;
 }
 
+.font-size-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.font-size-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  min-width: 46px;
+  text-align: center;
+}
+
 .archive-control-btn {
   min-width: auto;
   padding: 8px 14px;
@@ -522,6 +535,10 @@ button:disabled {
   gap: 8px;
   margin-bottom: 16px;
   flex-wrap: wrap;
+}
+
+.search-extra-controls {
+  margin-bottom: 12px;
 }
 
 .search-filter-btn {
@@ -1059,7 +1076,7 @@ button:disabled {
   padding: 10px;
   text-align: left;
   vertical-align: top;
-  font-size: 0.9rem;
+  font-size: var(--gonosz-table-font-size, 0.9rem);
   word-wrap: break-word;
   max-width: 200px;
 }
@@ -1293,6 +1310,20 @@ button:disabled {
   font-size: 0.9rem;
 }
 
+.gonosz-font-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.gonosz-font-size-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  min-width: 46px;
+  text-align: center;
+}
+
 .filter-section {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -1489,6 +1520,93 @@ button:disabled {
   padding: 16px;
   border: 1px solid var(--border);
   border-top: none;
+}
+
+.font-scale-target .search-count {
+  font-size: calc(0.9rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .search-filter-btn {
+  font-size: calc(0.88rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .result-title {
+  font-size: calc(1.1rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .result-subtitle {
+  font-size: calc(0.9rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .result-source-badge,
+.font-scale-target .match-badge {
+  font-size: calc(0.75rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .result-desc {
+  font-size: calc(0.88rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .writer-name {
+  font-size: calc(1.25rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .writer-book-count,
+.font-scale-target .book-char-count {
+  font-size: calc(0.85rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .book-title,
+.font-scale-target .character-name {
+  font-size: calc(1rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .character-description {
+  font-size: calc(0.92rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .question-label,
+.font-scale-target .option-btn,
+.font-scale-target .feedback,
+.font-scale-target .status {
+  font-size: calc(1rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .char-name {
+  font-size: calc(1.9rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .hint-panel {
+  font-size: calc(0.95rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .gonosz-table th,
+.font-scale-target .gonosz-table td,
+.font-scale-target .gonosz-table select,
+.font-scale-target .gonosz-chip,
+.font-scale-target .gonosz-option-group h4,
+.font-scale-target .gonosz-options h3 {
+  font-size: calc(0.9rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .memoriter-group-header {
+  font-size: calc(1.15rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .memoriter-title {
+  font-size: calc(1.3rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .memoriter-author {
+  font-size: calc(1rem * var(--content-font-scale, 1));
+}
+
+.font-scale-target .memoriter-date,
+.font-scale-target .memoriter-form,
+.font-scale-target .memoriter-dropdown-summary,
+.font-scale-target .memoriter-text,
+.font-scale-target .memoriter-learned-toggle {
+  font-size: calc(0.9rem * var(--content-font-scale, 1));
 }
 
 @media (max-width: 560px) {

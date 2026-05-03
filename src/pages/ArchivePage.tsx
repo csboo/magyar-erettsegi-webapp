@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import { ClearableSearchInput } from "../components/ClearableSearchInput";
+import { FontSizeControls } from "../components/FontSizeControls";
 import { useCharacters } from "../hooks/useCharacters";
 import { usePersistentState } from "../hooks/usePersistentState";
 import { groupByWriters } from "../lib/data";
@@ -10,6 +11,7 @@ export function ArchivePage() {
   const [query, setQuery] = useState("");
   const [showDescriptions, setShowDescriptions] = usePersistentState<boolean>("archive-showDescriptions", false);
   const [openBooks, setOpenBooks] = usePersistentState<Record<string, boolean>>("archive-openBooks", {});
+  const [fontScale, setFontScale] = usePersistentState<number>("archive-fontScale", 1);
 
   const filteredWriters = useMemo(() => {
     const value = query.toLowerCase().trim();
@@ -47,7 +49,10 @@ export function ArchivePage() {
     hasVisibleBooks && visibleBookKeys.every((key) => openBooks[key]);
 
   return (
-    <section className="adattar">
+    <section
+      className="adattar font-scale-target"
+      style={{ "--content-font-scale": fontScale } as CSSProperties}
+    >
       <header className="header">
         <h1>Adattár</h1>
         <p>{writers.length ? `${writers.length} szerző` : ""}</p>
@@ -77,6 +82,7 @@ export function ArchivePage() {
           <span className="toggle-label">Leírások mutatása</span>
         </label>
         <div className="archive-controls">
+          <FontSizeControls value={fontScale} onChange={setFontScale} />
           <button
             type="button"
             className="archive-control-btn"

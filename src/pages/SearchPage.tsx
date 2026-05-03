@@ -1,8 +1,10 @@
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, type CSSProperties } from "react";
 import { ClearableSearchInput } from "../components/ClearableSearchInput";
+import { FontSizeControls } from "../components/FontSizeControls";
 import { useCharacters } from "../hooks/useCharacters";
 import { useGonoszRecords } from "../hooks/useGonoszRecords";
 import { useDebouncedValue } from "../hooks/useDebouncedValue";
+import { usePersistentState } from "../hooks/usePersistentState";
 import { groupForSearch } from "../lib/data";
 import { fuzzyScore } from "../lib/text";
 import type { Memoriter, GonoszRecord } from "../types";
@@ -34,6 +36,7 @@ export function SearchPage() {
   const [query, setQuery] = useState("");
   const debouncedQuery = useDebouncedValue(query);
   const [activeFilter, setActiveFilter] = useState<DataSource | "all">("all");
+  const [fontScale, setFontScale] = usePersistentState<number>("search-fontScale", 1);
 
   useEffect(() => {
     fetch("/memoriterek.json")
@@ -72,7 +75,10 @@ export function SearchPage() {
   const error = charError || gonoszError || memoError;
 
   return (
-    <section className="search-page">
+    <section
+      className="search-page font-scale-target"
+      style={{ "--content-font-scale": fontScale } as CSSProperties}
+    >
       <header className="header">
         <h1>Keresés</h1>
       </header>
@@ -110,6 +116,10 @@ export function SearchPage() {
         >
           Gonosz adatok
         </button>
+      </div>
+
+      <div className="search-extra-controls">
+        <FontSizeControls value={fontScale} onChange={setFontScale} />
       </div>
 
       <span className="search-count">

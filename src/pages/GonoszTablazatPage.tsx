@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import { Link } from "react-router-dom";
+import { FontSizeControls } from "../components/FontSizeControls";
 import { useGonoszRecords } from "../hooks/useGonoszRecords";
 import { shuffle } from "../lib/random";
 import { usePersistentState } from "../hooks/usePersistentState";
@@ -171,6 +172,7 @@ export function GonoszTablazatPage() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [evaluated, setEvaluated] = useState(false);
   const [hardMode, setHardMode] = usePersistentState<boolean>("gonosztablazat-hardMode", false);
+  const [fontScale, setFontScale] = usePersistentState<number>("gonosztablazat-fontScale", 1);
   const [finished, setFinished] = useState(false);
   const [roundIndex, setRoundIndex] = useState(0);
   const [totalCorrect, setTotalCorrect] = useState(0);
@@ -480,7 +482,10 @@ export function GonoszTablazatPage() {
         </p>
       </header>
 
-      <section className="card">
+      <section
+        className="card font-scale-target"
+        style={{ "--content-font-scale": fontScale } as CSSProperties}
+      >
         <div className="toolbar">
           <label className="toggle">
             <input
@@ -491,6 +496,9 @@ export function GonoszTablazatPage() {
             <span className="toggle-track" />
             <span className="toggle-label">Nehéz mód</span>
           </label>
+          <div className="archive-controls">
+            <FontSizeControls value={fontScale} onChange={setFontScale} />
+          </div>
         </div>
 
         <div className="gonosz-table-wrap">

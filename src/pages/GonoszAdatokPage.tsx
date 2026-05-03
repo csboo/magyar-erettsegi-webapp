@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState, useEffect } from "react";
+import { useMemo, useRef, useState, useEffect, type CSSProperties } from "react";
 import { useGonoszRecords } from "../hooks/useGonoszRecords";
 import { usePersistentState, usePersistentSet } from "../hooks/usePersistentState";
 import type { GonoszRecord } from "../types";
@@ -35,6 +35,11 @@ const ERA_ORDER = [
   "realizmus",
   "klasszikusesavantgardmodernitas",
 ] as const;
+
+const DEFAULT_TABLE_FONT_SIZE = 0.9;
+const MIN_TABLE_FONT_SIZE = 0.7;
+const MAX_TABLE_FONT_SIZE = 1.5;
+const TABLE_FONT_STEP = 0.05;
 
 function normalizeSortText(value: string): string {
   return value
@@ -113,6 +118,10 @@ export function GonoszAdatokPage() {
   const [tableConfigOpen, setTableConfigOpen] = useState(false);
   const [hiddenColumns, setHiddenColumns] = usePersistentSet<SortField>("gonoszadatok-hiddenColumns", new Set());
   const [dedupColumns, setDedupColumns] = usePersistentSet<SortField>("gonoszadatok-dedupColumns", new Set());
+  const [tableFontSize, setTableFontSize] = usePersistentState<number>(
+    "gonoszadatok-tableFontSize",
+    DEFAULT_TABLE_FONT_SIZE,
+  );
 
   const filterRef = useRef<HTMLDivElement>(null);
   const tableConfigRef = useRef<HTMLDivElement>(null);
@@ -280,6 +289,13 @@ export function GonoszAdatokPage() {
     }
   }
 
+  function adjustFontSize(delta: number) {
+    setTableFontSize((current) => {
+      const next = Number((current + delta).toFixed(2));
+      return Math.max(MIN_TABLE_FONT_SIZE, Math.min(MAX_TABLE_FONT_SIZE, next));
+    });
+  }
+
   if (loading) {
     return (
       <section className="gonosz-page">
@@ -313,7 +329,14 @@ export function GonoszAdatokPage() {
         <p>{filteredAndSorted.length} / {records.length} rekord</p>
       </header>
 
-      <section className="card">
+      <section
+        className="card"
+        style={
+          {
+            "--gonosz-table-font-size": `${tableFontSize}rem`,
+          } as CSSProperties
+        }
+      >
         <div className="toolbar">
           <div className="archive-controls">
             <div className="gonosz-filter-wrap" ref={filterRef}>
@@ -419,6 +442,33 @@ export function GonoszAdatokPage() {
                   </div>
                 </div>
               ) : null}
+            </div>
+            <div className="gonosz-font-controls" aria-label="Betűméret beállítás">
+              <button
+                type="button"
+                className="archive-control-btn"
+                onClick={() => adjustFontSize(-TABLE_FONT_STEP)}
+                disabled={tableFontSize <= MIN_TABLE_FONT_SIZE}
+              >
+                A-
+              </button>
+              <span className="gonosz-font-size-label">{Math.round(tableFontSize * 100)}%</span>
+              <button
+                type="button"
+                className="archive-control-btn"
+                onClick={() => adjustFontSize(TABLE_FONT_STEP)}
+                disabled={tableFontSize >= MAX_TABLE_FONT_SIZE}
+              >
+                A+
+              </button>
+              <button
+                type="button"
+                className="archive-control-btn"
+                onClick={() => setTableFontSize(DEFAULT_TABLE_FONT_SIZE)}
+                disabled={tableFontSize === DEFAULT_TABLE_FONT_SIZE}
+              >
+                Reset
+              </button>
             </div>
           </div>
         </div>

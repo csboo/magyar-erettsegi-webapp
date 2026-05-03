@@ -1,6 +1,8 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import { Link } from "react-router-dom";
+import { FontSizeControls } from "../components/FontSizeControls";
 import { useCharacters } from "../hooks/useCharacters";
+import { usePersistentState } from "../hooks/usePersistentState";
 import { shuffle } from "../lib/random";
 import type { CharacterRecord } from "../types";
 
@@ -41,6 +43,7 @@ export function FiveChoicePage() {
   const [selectedTitle, setSelectedTitle] = useState<string | null>(null);
   const [showHint, setShowHint] = useState(false);
   const [earlyFinishCount, setEarlyFinishCount] = useState<number | null>(null);
+  const [fontScale, setFontScale] = usePersistentState<number>("fivechoice-fontScale", 1);
 
   const questions = useMemo(() => buildQuestions(records, restartSeed), [records, restartSeed]);
 
@@ -64,8 +67,16 @@ export function FiveChoicePage() {
         <p>Melyik műben szerepel a karakter?</p>
       </header>
 
-      <section className="card">
-        {loading ? <p className="status">Betöltés...</p> : null}
+        <section
+          className="card font-scale-target"
+          style={{ "--content-font-scale": fontScale } as CSSProperties}
+        >
+          <div className="toolbar">
+            <div className="archive-controls">
+              <FontSizeControls value={fontScale} onChange={setFontScale} />
+            </div>
+          </div>
+          {loading ? <p className="status">Betöltés...</p> : null}
         {error ? <p className="status">{error}</p> : null}
         {!loading && !error && questions.length === 0 ? (
           <p className="status">Nincs elég mű a játékhoz.</p>
